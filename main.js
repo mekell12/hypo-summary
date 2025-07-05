@@ -32,10 +32,10 @@ function inputNumber(id, label, min, max, step, defaultValue, container) {
   input.step = step;
   input.value = defaultValue;
 
-  let label = document.createElement('p');
-  label.innerText = label;
+  let labelElement = document.createElement('p');
+  labelElement.innerText = label;
 
-  container.appendChild(label);
+  container.appendChild(labelElement);
   container.appendChild(input);
   container.appendChild(document.createElement('br'));
   return input;
@@ -49,7 +49,7 @@ function inputText(id, label, defaultValue, container) {
   let labelElement = document.createElement('p');
   labelElement.innerText = label;
 
-  container.appendChild(label);
+  container.appendChild(labelElement);
   container.appendChild(input);
   container.appendChild(document.createElement('br'));
   return input;

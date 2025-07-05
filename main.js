@@ -83,7 +83,7 @@ UI_CYCLONE_NEWCYCLONE.onclick = function() {
   refresh();
 }
 UI_CYCLONE_CHANGESTATS.onclick = function() {
-  if (0 <== selectedCycloneIndex && selectedCycloneIndex < cyclones.length) {
+  if (0 <= selectedCycloneIndex && selectedCycloneIndex < cyclones.length) {
     cyclones[selectedCycloneIndex].name = UI_CYCLONE_NAME.value;
     cyclones[selectedCycloneIndex].maxWind = UI_CYCLONE_WINDSPEED.value;
     cyclones[selectedCycloneIndex].minPressure = UI_CYCLONE_PRESSURE.value;

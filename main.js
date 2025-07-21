@@ -11,7 +11,7 @@ let cyclones = [];
 let selectedCycloneIndex = -1;
 
 // -- GUI -- //
-const UI_CONTAINER = document.getElementById('ui-container');
+const UI_CONTAINER = document.querySelector('#ui-container');
 
 function inputButton(id, label, container) {
   let input = document.createElement('button');
@@ -59,7 +59,7 @@ function container() {
   let element = document.createElement('div');
   element.class = 'container';
   
-  document.getElementById('ui-container').appendChild(element);
+  UI_CONTAINER.appendChild(element);
   return element;
 }
 

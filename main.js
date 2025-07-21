@@ -59,7 +59,7 @@ function container() {
   let element = document.createElement('div');
   element.class = 'container';
   
-  UI_CONTAINER.appendChild(element);
+  document.getElementById('ui-container').appendChild(element);
   return element;
 }
 
